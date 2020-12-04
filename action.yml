@@ -167,6 +167,8 @@ runs:
     AST_WEBAPPURL: ${{ inputs.ast_webapp_url }}
     AST_CLIENTID: ${{ inputs.ast_client_id }}
     AST_CLIENTSECRET: ${{ inputs.ast_client_secret }}
+    AST_PRESET: ${{ inputs.preset }}
+    AST_INCREMENTAL: ${{ inputs.incremental }}
 
 branding:
   icon: 'check'
