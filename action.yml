@@ -154,9 +154,9 @@ runs:
     CXFLOW_PARAMS: ${{ inputs.params }}
     GITHUB_TOKEN: ${{ inputs.github_token }}
     SCANNERS: ${{ inputs.scanners }}
-    SCA_API_URL: ${{ inputs.sca_api_url }}
-    SCA_APP_URL: ${{ inputs.sca_app_url }}
-    SCA_ACCESS_CONTROL_URL: ${{ inputs.sca_access_control_url }}
+    SCA_APIURL: ${{ inputs.sca_api_url }}
+    SCA_APPURL: ${{ inputs.sca_app_url }}
+    SCA_ACCESSCONTROLURL: ${{ inputs.sca_access_control_url }}
     SCA_TENANT: ${{ inputs.sca_tenant }}
     SCA_USERNAME: ${{ inputs.sca_username }}
     SCA_PASSWORD: ${{ inputs.sca_password }}
