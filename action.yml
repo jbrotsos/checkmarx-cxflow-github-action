@@ -48,7 +48,7 @@ inputs:
     description: 'Additional CLI parameters'
   github_token:
     required: false
-    default: ''
+    default: ${{ github.token }}
     description: 'GitHub API Token'
   scanners:
     required: true
@@ -124,7 +124,7 @@ runs:
     - ${{ inputs.incremental }}
     - ${{ inputs.break_build }}
     - ${{ inputs.params }}
-    - ${{ github.token }}
+    - ${{ inputs.github_token }}
     - ${{ inputs.scanners }}
     - ${{ inputs.sca_api_url }}
     - ${{ inputs.sca_app_url }}
@@ -152,7 +152,7 @@ runs:
     CHECKMARX_INCREMENTAL: ${{ inputs.incremental }}
     CX_FLOW_BREAK_BUILD: ${{ inputs.break_build }}
     CXFLOW_PARAMS: ${{ inputs.params }}
-    GITHUB_TOKEN: ${{ github.token }}
+    GITHUB_TOKEN: ${{ inputs.github_token }}
     SCANNERS: ${{ inputs.scanners }}
     SCA_APIURL: ${{ inputs.sca_api_url }}
     SCA_APPURL: ${{ inputs.sca_app_url }}
