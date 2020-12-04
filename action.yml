@@ -153,7 +153,7 @@ runs:
     CX_FLOW_BREAK_BUILD: ${{ inputs.break_build }}
     CXFLOW_PARAMS: ${{ inputs.params }}
     GITHUB_TOKEN: ${{ inputs.github_token }}
-    CXFLOW_ENABLED-VULNERABILITY-SCANNERS: ${{ inputs.scanners }}
+    SCANNERS: ${{ inputs.scanners }}
     SCA_API_URL: ${{ inputs.sca_api_url }}
     SCA_APP_URL: ${{ inputs.sca_app_url }}
     SCA_ACCESS_CONTROL_URL: ${{ inputs.sca_access_control_url }}
@@ -163,10 +163,10 @@ runs:
     CXGO_CLIENT_SECRET: ${{ inputs.cxgo_client_secret }}
     CXGO_BASE_URL: ${{ inputs.cxgo_base_url }}
     CXGO_PORTAL_URL: ${{ inputs.cxgo_portal_url }}
-    AST_API_URL: ${{ inputs.ast_api_url }}
-    AST_WEBAPP_URL: ${{ inputs.ast_webapp_url }}
-    AST_CLIENT_ID: ${{ inputs.ast_client_id }}
-    AST_CLIENT_SECRET: ${{ inputs.ast_client_secret }}
+    AST_APIURL: ${{ inputs.ast_api_url }}
+    AST_WEBAPPURL: ${{ inputs.ast_webapp_url }}
+    AST_CLIENTID: ${{ inputs.ast_client_id }}
+    AST_CLIENTSECRET: ${{ inputs.ast_client_secret }}
 
 branding:
   icon: 'check'
