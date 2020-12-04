@@ -124,7 +124,7 @@ runs:
     - ${{ inputs.incremental }}
     - ${{ inputs.break_build }}
     - ${{ inputs.params }}
-    - ${{ inputs.github_token }}
+    - ${{ github.token }}
     - ${{ inputs.scanners }}
     - ${{ inputs.sca_api_url }}
     - ${{ inputs.sca_app_url }}
@@ -152,7 +152,7 @@ runs:
     CHECKMARX_INCREMENTAL: ${{ inputs.incremental }}
     CX_FLOW_BREAK_BUILD: ${{ inputs.break_build }}
     CXFLOW_PARAMS: ${{ inputs.params }}
-    GITHUB_TOKEN: ${{ inputs.github_token }}
+    GITHUB_TOKEN: ${{ github.token }}
     SCANNERS: ${{ inputs.scanners }}
     SCA_APIURL: ${{ inputs.sca_api_url }}
     SCA_APPURL: ${{ inputs.sca_app_url }}
