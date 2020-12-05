@@ -154,7 +154,7 @@ runs:
     CXFLOW_PARAMS: ${{ inputs.params }}
     GITHUB_TOKEN: ${{ inputs.github_token }}
     CXFLOW_ENABLEDVULNERABILITYSCANNERS: ${{ inputs.scanners }}
-    CX_FLOW_ENABLEDVULNERABILITYSCANNERS: ${{ inputs.scanners }}
+    CX-FLOW_ENABLEDVULNERABILITYSCANNERS: ${{ inputs.scanners }}
     SCA_APIURL: ${{ inputs.sca_api_url }}
     SCA_APPURL: ${{ inputs.sca_app_url }}
     SCA_ACCESSCONTROLURL: ${{ inputs.sca_access_control_url }}
