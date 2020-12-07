@@ -153,7 +153,7 @@ runs:
     CX_FLOW_BREAK_BUILD: ${{ inputs.break_build }}
     CXFLOW_PARAMS: ${{ inputs.params }}
     GITHUB_TOKEN: ${{ inputs.github_token }}
-    SCANNERS: ${{ inputs.scanners }}
+    CX_FLOW_ENABLED_VULNERABILITY_SCANNERS: ${{ inputs.scanners }}
     SCA_APIURL: ${{ inputs.sca_api_url }}
     SCA_APPURL: ${{ inputs.sca_app_url }}
     SCA_ACCESSCONTROLURL: ${{ inputs.sca_access_control_url }}
