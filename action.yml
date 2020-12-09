@@ -48,7 +48,7 @@ inputs:
     description: 'Incremental Scans?'
   params:
     required: false
-    default: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }}  --branch=${{ github.head_ref }}
+    default: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }}
     description: 'Additional CLI parameters'
   github_token:
     required: false
